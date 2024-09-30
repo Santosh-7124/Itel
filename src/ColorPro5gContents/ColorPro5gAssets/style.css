@@ -1,0 +1,859 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  letter-spacing: normal;
+}
+
+@font-face {
+  font-family: "Mark OT";
+  src: url("/Mark OT/MarkOT.otf") format("opentype"); /* Use 'opentype' for .otf */
+  font-weight: normal; /* You can adjust the weight based on the font */
+  font-style: normal; /* Change this to 'italic' if it's an italic version */
+}
+
+.s-bannerUp {
+  height: calc(100svh - 101px);
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+}
+
+.s-bannerUp video {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+}
+
+.s-bannerUp .s-featurePrice {
+  flex-direction: column-reverse;
+  position: absolute;
+  bottom: 10%;
+  left: 20%;
+}
+
+.s-bannerDown {
+  width: 100%;
+  padding: 24px 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  border-top: 3px solid var(--Color-Pro-5G, #ba69f6);
+  background: radial-gradient(
+    56.49% 350.52% at 50% 0%,
+    #201853 0%,
+    #12052d 100%
+  );
+  position: sticky;
+  top: 0px;
+  z-index: 100;
+}
+
+.bannerDownText {
+  width: 268.125px;
+  text-align: center;
+  text-shadow: 0px 0px 18.333px rgba(0, 0, 0, 0.5);
+
+  /* Desktop/H1 */
+  font-family: "Mark OT";
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%; /* 96px */
+  background: var(
+    --Color-Pro-5G,
+    linear-gradient(270deg, #ba69f6 0.78%, #2768c2 99.93%)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.s-bannerDownLink {
+  display: flex;
+  align-items: flex-start;
+  gap: 32px;
+  color: var(--White, #fff);
+  font-family: "Mark OT";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  letter-spacing: 0.16px;
+}
+
+.s-bannerDownLink p {
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.s-bannerDownLink p:hover {
+  color: var(--White, #fff);
+  font-family: "Mark OT";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+  letter-spacing: 0.16px;
+}
+
+.s-bannerDownButton {
+  height: 50px;
+  display: flex;
+  padding: 12px 24px;
+  align-items: center;
+  gap: 8px;
+  border-radius: 24px;
+  border: 0.75px solid #4f4f4f;
+  background: #fff;
+  overflow: hidden;
+  transition: all 0.3s;
+  position: relative;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.s-bannerDownButton p {
+  color: var(--Smoky-Black, #0e0e0e);
+  text-align: center;
+  font-family: "Mark OT";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+  letter-spacing: 0.16px;
+  text-transform: uppercase;
+  z-index: 1;
+}
+
+.bannerDownButtonSvg {
+  position: absolute;
+  right: 24px;
+}
+
+.s-bannerDownButton:hover .bannerDownButtonSvg {
+  animation: bannerDownButton 0.3s linear;
+}
+
+@keyframes bannerDownButton {
+  from {
+    transform: translateX(-100px) scale(0.5);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(1px) scale(1);
+    opacity: 1;
+  }
+}
+
+.s-features {
+  display: flex;
+  width: 100%;
+  padding: 120px 80px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 60px;
+  background: #181818;
+}
+
+.s-features .s-heading {
+  display: flex;
+  width: 910px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.s-features .s-heading h2 {
+  color: var(--White, #fff);
+  font-family: "Mark OT";
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+  letter-spacing: -1.92px;
+}
+
+.s-features .s-heading .s-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  align-self: stretch;
+}
+
+.s-features .s-heading .s-text p {
+  color: var(--White, #fff);
+  text-overflow: ellipsis;
+  font-family: "Mark OT";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.s-features .s-heading .s-text span {
+  padding-top: 8px;
+  overflow: hidden;
+  color: var(--White, #fff);
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-family: "Mark OT";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+  letter-spacing: 0.16px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.s-featurePrice {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.s-featurePriceButton svg {
+  z-index: 1;
+}
+
+.s-featurePriceButton:hover .bannerDownButtonSvg {
+  animation: bannerDownButton 0.3s linear;
+}
+
+.s-featurePrice .s-featurePriceBuy {
+  z-index: 1;
+  color: var(--Colors-Brand-Black, #1c1b1b);
+  text-align: center;
+  font-family: "Mark OT";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 19.2px */
+  letter-spacing: 0.16px;
+  text-transform: uppercase;
+}
+
+.s-featurePrice p {
+  z-index: 1;
+  color: var(--White, #fff);
+  font-family: "Mark OT";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 24px */
+  letter-spacing: 0.2px;
+}
+
+.s-featurePrice p span {
+  color: var(--White, #fff);
+  font-family: "Mark OT";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%;
+  letter-spacing: 0.2px;
+}
+
+.s-featurePriceButton {
+  width: 162px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  cursor: pointer;
+  position: relative;
+}
+
+.s-featurePriceButton img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.s-featurePrice .s-bannerDownButton {
+  border-radius: 0;
+  border: 0;
+}
+
+.s-featurePrice .s-bannerDownButton p {
+  color: var(--Colors-Brand-Black, #1c1b1b);
+  text-align: center;
+  font-family: "Mark OT";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+  letter-spacing: 0.16px;
+  text-transform: uppercase;
+}
+
+.s-featuresContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.s-featuresContainerTop {
+  width: 100%;
+  display: flex;
+  height: 771px;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.s-featuresContainerTopLeft {
+  width: 40%;
+  height: 771px;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.s-featuresContainerTopLeft video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.s-featuresContainerTopRight {
+  width: 60%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.s-featureSet {
+  width: 100%;
+  display: flex;
+  height: 375px;
+  padding: 20px 20px 224px 20px;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 16px;
+  background: linear-gradient(180deg, #0c121f 9.33%, rgba(12, 18, 31, 0) 56.93%),
+    linear-gradient(
+        0deg,
+        rgba(87, 98, 243, 0.2) 0%,
+        rgba(87, 98, 243, 0.2) 100%
+      )
+      no-repeat;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.s-featureSet img {
+  top: 0;
+  position: absolute;
+  width: 110%;
+  height: 375px;
+  object-fit: cover;
+}
+
+.s-featureSet .s-heading {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  z-index: 1;
+}
+
+.s-featureSet .s-heading h3 {
+  opacity: 0.9;
+  color: var(--White, #fff);
+  font-family: "Mark OT";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%; /* 31.2px */
+  letter-spacing: -0.48px;
+}
+
+.s-featureSet .s-heading h4 {
+  opacity: 0.9;
+  color: var(--White, #fff);
+  font-family: "Mark OT";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%;
+  letter-spacing: -0.2px;
+}
+
+.s-featureSet .s-heading p {
+  color: var(--White, #fff);
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-family: "Mark OT";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+  letter-spacing: 0.24px;
+}
+
+.s-featuresContainerDown {
+  width: 100%;
+  height: 372px;
+  border-radius: 16px;
+  overflow: hidden;
+  position: relative;
+}
+.s-featuresContainerDown img {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  width: 100%;
+  height: 372px;
+  object-fit: cover;
+}
+
+.s-featuresContainerDown .s-heading {
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: relative;
+  z-index: 1;
+  padding: 32px 42px;
+}
+
+.s-featuresContainerDown .s-heading h3 {
+  width: 600px;
+  color: var(--White, #fff);
+  text-shadow: 0px 2px 16px rgba(0, 0, 0, 0.4);
+  font-family: "Mark OT";
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%;
+  letter-spacing: -0.72px;
+}
+
+.s-featuresContainerDown .s-heading p {
+  width: 365px;
+  color: var(--White, #fff);
+  font-family: "Mark OT";
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 16px */
+  letter-spacing: 0.2px;
+}
+
+.s-enhance {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 42px;
+  padding: 80px 120px;
+  background: #010005;
+}
+
+.s-enhance .s-heading {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  align-self: stretch;
+}
+
+.s-enhance .s-heading h2 {
+  color: #fff;
+  font-family: "Mark OT";
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%; /* 57.6px */
+  letter-spacing: -1.92px;
+}
+
+.s-enhance .s-heading p {
+  color: #fff;
+  font-family: "Mark OT";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%; /* 31.2px */
+  letter-spacing: -0.48px;
+}
+
+.s-enhanceVideo {
+  width: 100%;
+  height: 663.75px;
+  overflow: hidden;
+}
+
+.s-enhanceVideo video {
+  width: 100%;
+  height: 663.75px;
+  object-fit: cover;
+}
+
+.s-transform {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: flex-start;
+  padding: 80px 80px;
+  background: #181818;
+  position: relative;
+  overflow: hidden;
+}
+
+.s-transformVideo {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
+
+.s-transformVideo video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.s-transform .s-heading {
+  display: flex;
+  width: 526px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+  z-index: 1;
+}
+
+.s-transform .s-heading img {
+  height: 70px;
+  object-fit: cover;
+}
+
+.s-transform .s-heading .s-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+  align-self: stretch;
+}
+
+.s-transform .s-heading .s-text h2 {
+  color: #fff;
+  font-family: "Mark OT";
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%; /* 72px */
+  letter-spacing: -1.8px;
+}
+
+.s-transform .s-heading .s-text p {
+  color: #fff;
+  font-family: "Mark OT";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+  letter-spacing: -0.2px;
+}
+
+.s-colour {
+  display: flex;
+  width: 100%;
+  padding: 80px;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+  background: #111;
+}
+
+.s-colourUp {
+  width: 100%;
+  height: 576px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.ColourBackground {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+  z-index: 1;
+}
+
+.ColourMobile {
+  width: 16%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(calc(-50% + 20px), -50%);
+  flex-shrink: 0;
+  z-index: 3;
+}
+
+.s-MarqueeContainer {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper {
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.marquee {
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-flex;
+  align-items: center;
+  animation: marquee 20s linear infinite;
+  padding: 4px 0;
+  gap: 20px;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+.s-colourDown {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.s-colourDown h6 {
+  color: var(--White, #fff);
+  font-family: "Mark OT";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+  letter-spacing: 0.32px;
+  text-transform: uppercase;
+}
+
+.s-colourOptionDiv {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.s-colourOptionSet {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 8px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.s-colourCircle {
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+  border-radius: 50%;
+}
+
+.s-colourOptionSet p {
+  color: var(--White, #fff);
+  font-family: "Mark OT";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 19.2px */
+  text-transform: uppercase;
+  display: none;
+  transition: all 0.5s;
+}
+
+.s-activeColour {
+  height: 40px;
+  padding-left: 4px;
+  padding-right: 10px;
+  border-radius: 100px;
+  border: 2px solid var(--Itel-Red, #ff0037);
+  transition: all 0.5s;
+}
+
+.s-activeColour .s-colourCircle {
+  width: 30px;
+  height: 30px;
+  flex-shrink: 0;
+  transition: all 0.5s;
+}
+
+.s-activeColour p {
+  display: block;
+  transition: all 0.5s;
+}
+
+.s-colourOptionSet:hover {
+  border-radius: 100px;
+  border: 2px solid var(--Itel-Red, #ff0037);
+}
+
+.s-capture {
+  padding: 80px 0px 80px 80px;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-shrink: 0;
+  gap: 20px;
+  background: #111;
+  position: relative;
+}
+
+.s-captureBackground {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
+
+.s-captureBackground img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.s-captureContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 48px;
+  z-index: 1;
+}
+
+.s-captureContainer .s-heading {
+  width: 525px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 12px;
+}
+
+.s-captureContainer .s-heading h2 {
+  color: var(--White, #fff);
+  font-family: "Mark OT";
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+  letter-spacing: -1.92px;
+}
+
+.s-captureContainer .s-heading p {
+  color: var(--White, #fff);
+  font-family: "Mark OT";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 142%;
+}
+
+.s-captureContainerDiv {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+}
+
+.s-captureSet {
+  display: flex;
+  width: 202px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.s-captureSet h3 {
+  color: var(--White, #fff);
+  font-family: "Mark OT";
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%; /* 46.8px */
+  letter-spacing: -0.72px;
+  opacity: 0.8;
+}
+
+.s-captureSet p {
+  color: #fff;
+  font-family: "Mark OT";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+}
+
+.s-captureContainerDiv .s-Line {
+  width: 1px;
+  height: 81px;
+  background: var(--White, #fff);
+}
+
+.s-captureText {
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 28px;
+}
+
+.s-captureText p {
+  width: 582px;
+  color: var(--White, #fff);
+  font-family: "Mark OT";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 32px */
+  letter-spacing: -0.2px;
+}
