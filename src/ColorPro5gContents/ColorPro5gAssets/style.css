@@ -734,6 +734,134 @@
   border: 2px solid var(--Itel-Red, #ff0037);
 }
 
+.s-revolution {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 4px;
+  position: relative;
+}
+
+.s-revolutionBackground {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.s-revolutionPhone {
+  position: absolute;
+  height: 440.273px;
+  width: 933.714px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+}
+
+.s-revolutionPhone img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.s-revolutionVideo {
+  position: absolute;
+  height: 440.273px;
+  width: 933.714px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+.s-revolutionVideo video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.s-revolutionText {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 100%);
+  z-index: 4;
+}
+
+.s-revolutionText p {
+  animation: revolutionText 8s linear infinite;
+}
+
+@keyframes revolutionText {
+  0% {
+    transform: translateX(50%) scale(0.5);
+    opacity: 0;
+  }
+  5% {
+    transform: translateX(0%) scale(1);
+    opacity: 1;
+  }
+  95% {
+    transform: translateX(0%) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(-50%) scale(0.5);
+    opacity: 0;
+  }
+}
+
+.s-revolutionText p {
+  text-align: center;
+  font-family: "Mark OT";
+  font-size: 136px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 110%; /* 149.6px */
+  letter-spacing: -4.08px;
+  background: var(
+    --Color-Pro-5G,
+    linear-gradient(270deg, #ba69f6 0.78%, #2768c2 99.93%)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.s-revolution .s-heading {
+  display: flex;
+  width: 529px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  z-index: 1;
+  padding-top: 60px;
+}
+
+.s-revolution .s-heading h2 {
+  color: var(--White, #fff);
+  text-align: center;
+  font-family: "Mark OT";
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+  letter-spacing: -1.92px;
+}
+.s-revolution .s-heading {
+  color: var(--White, #fff);
+  text-align: center;
+  font-family: "Mark OT";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+}
+
 .s-capture {
   padding: 80px 0px 80px 80px;
   width: 100%;
