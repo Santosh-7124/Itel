@@ -7,7 +7,7 @@
 
 @font-face {
   font-family: "Mark OT";
-  src: url("/Mark OT/MarkOT.otf") format("opentype"); /* Use 'opentype' for .otf */
+  src: url("./Mark OT/MarkOT.otf") format("opentype"); /* Use 'opentype' for .otf */
   font-weight: normal; /* You can adjust the weight based on the font */
   font-style: normal; /* Change this to 'italic' if it's an italic version */
 }
