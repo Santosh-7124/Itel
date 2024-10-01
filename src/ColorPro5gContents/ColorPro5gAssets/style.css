@@ -161,7 +161,7 @@
   align-items: flex-start;
   gap: 60px;
   background: #181818;
-    overflow: hidden;
+  overflow: hidden;
 }
 
 .s-features .s-heading {
@@ -470,7 +470,7 @@
   gap: 42px;
   padding: 80px 120px;
   background: #010005;
-    overflow: hidden;
+  overflow: hidden;
 }
 
 .s-enhance .s-heading {
@@ -743,7 +743,8 @@
   justify-content: center;
   gap: 4px;
   position: relative;
-    overflow: hidden;
+  overflow: hidden;
+  background: #111;
 }
 
 .s-revolutionBackground {
@@ -861,6 +862,158 @@
   font-style: normal;
   font-weight: 400;
   line-height: 160%;
+}
+
+.s-ramrom {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-shrink: 0;
+  padding: 80px;
+  position: relative;
+  background: #111;
+}
+
+.RamRomBackground {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.s-ramromUp {
+  display: flex;
+  width: 462px;
+  flex-direction: column;
+  align-items: flex-start;
+  z-index: 1;
+  visibility: hidden;
+}
+
+.s-ramromUp h2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: stretch;
+  color: var(--White, #fff);
+  font-family: "Mark OT";
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+  letter-spacing: -1.92px;
+}
+
+.s-ramromDowm {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+  align-self: stretch;
+  z-index: 1;
+}
+
+.s-ramromDowm .s-heading {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  visibility: hidden;
+}
+
+.s-ramromDowm .s-heading .s-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.s-ramromDowm .s-heading .s-text h3 {
+  color: var(--Colors-Grey-Grey-2, #d9d9d9);
+
+  /* Desktop/H3 */
+  font-family: "Mark OT";
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%; /* 46.8px */
+  letter-spacing: -0.72px;
+}
+
+.s-ramromDowm .s-heading .s-text h4 {
+  color: var(--Colors-Grey-Grey-1, #f2f2f2);
+  font-family: "Mark OT";
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%; /* 28.6px */
+  letter-spacing: -0.44px;
+}
+
+.s-ramromDowm .s-heading p {
+  color: var(--Colors-Grey-Grey-3, #949494);
+  font-family: "Mark OT";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+}
+
+.s-ramromDowm .s-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  visibility: hidden;
+}
+
+.s-ramromDowm .s-content h3 {
+  color: var(--Colors-Grey-Grey-2, #d9d9d9);
+  font-family: "Mark OT";
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%; /* 46.8px */
+  letter-spacing: -0.72px;
+}
+
+.s-ramromDowm .s-content h4 {
+  color: var(--Colors-Grey-Grey-1, #f2f2f2);
+  font-family: "Mark OT";
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%; /* 28.6px */
+  letter-spacing: -0.44px;
+}
+
+.s-activeRam h2 {
+  animation: updownText 0.5s linear;
+  animation-delay: 0.3s;
+  visibility: visible;
+}
+
+@keyframes updownText {
+  from {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+.s-activeRam .s-heading,
+.s-activeRam .s-content {
+  animation: updownText 0.5s linear;
+  visibility: visible;
 }
 
 .s-capture {
@@ -985,4 +1138,346 @@
   font-weight: 400;
   line-height: 160%; /* 32px */
   letter-spacing: -0.2px;
+}
+
+.s-cameraMode {
+  display: flex;
+  padding: 120px 80px;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  background: #070011;
+}
+
+.s-cameraMode video {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+.s-processor {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #070011;
+  position: relative;
+  overflow: hidden;
+}
+
+.s-processor video {
+  width: 100%;
+  object-fit: cover;
+}
+
+.s-processor .s-heading {
+  display: flex;
+  width: 820px;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  position: absolute;
+  top: -50%;
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+.s-activeProcessor .s-heading {
+  opacity: 1;
+  top: 5%;
+}
+
+.s-processor .s-heading .s-text {
+  display: flex;
+  height: 40px;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 5.475px;
+}
+
+.s-processor .s-heading .s-text h3 {
+  color: var(--White, #fff);
+  font-family: "Mark OT";
+  font-size: 23.161px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+}
+
+.s-processor .s-heading .s-text h3 span {
+  color: var(--White, #fff);
+  font-family: "Mark OT";
+  font-size: 23.161px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 160%; /* 37.057px */
+}
+
+.s-processor .s-heading .s-text img {
+  width: 152.84px;
+  object-fit: cover;
+}
+
+.s-processor .s-heading .s-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  align-self: stretch;
+}
+
+.s-processor .s-heading .s-content h2 {
+  color: var(--White, #fff);
+  text-align: center;
+  font-family: "Mark OT";
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%; /* 57.6px */
+  letter-spacing: -1.92px;
+}
+
+.s-processor .s-heading .s-content p {
+  color: var(--White, #fff);
+  text-align: center;
+  font-family: "Mark OT";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+  letter-spacing: -0.2px;
+}
+
+.s-game {
+  width: 100%;
+  height: 749.693px;
+  position: relative;
+  background: #070011;
+}
+
+.GameBackground {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.s-gameContent {
+  padding: 80px 40px;
+  display: flex;
+  width: 545px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 80px;
+}
+
+.s-gameContentUp {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 42px;
+  z-index: 1;
+}
+
+.s-gameContentUp .s-heading {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 12px;
+}
+
+.s-gameContentUp .s-heading h2 {
+  color: var(--White, #fff);
+  font-family: "Mark OT";
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%; /* 57.6px */
+  letter-spacing: -1.92px;
+}
+
+.s-gameContentUp .s-heading p {
+  color: var(--White, #fff);
+  font-family: "Mark OT";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 142%; /* 22.72px */
+}
+
+.s-gameContent .s-content {
+  display: flex;
+  align-items: center;
+  gap: 42px;
+  align-self: stretch;
+}
+
+.s-gameContent .s-content .s-gameSet {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.s-gameContent .s-content .s-gameSet svg {
+  width: 40px;
+  height: 40px;
+}
+
+.s-gameContent .s-content .s-gameSet p {
+  color: #fff;
+
+  /* Desktop/H6 Medium */
+  font-family: "Mark OT";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%; /* 19.2px */
+  letter-spacing: 0.16px;
+}
+
+.s-gameContent .s-content .s-gameSet p span {
+  color: #fff;
+
+  /* Desktop/H4 */
+  font-family: "Mark OT";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%;
+  letter-spacing: -0.48px;
+}
+
+.s-gameContentDown {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  z-index: 1;
+}
+
+.s-gameContentDown h1 {
+  color: #fff;
+
+  /* Desktop/H1 */
+  font-family: "Mark OT";
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%; /* 96px */
+  letter-spacing: -2.4px;
+}
+
+.s-gameContentDown p {
+  color: #fff;
+
+  /* Desktop/H6 Medium */
+  font-family: "Mark OT";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%; /* 19.2px */
+  letter-spacing: 0.16px;
+}
+
+.s-display {
+  width: 100%;
+  background: #0b0021;
+  position: relative;
+}
+
+.DisplayBackground {
+  width: 100%;
+  padding: 120px 80px;
+  border-radius: 16px;
+  object-fit: cover;
+}
+
+.s-displayText {
+  width: 407px;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 160px;
+}
+
+.s-displayText h2 {
+  color: var(--White, #fff);
+
+  /* Desktop/H2 */
+  font-family: "Mark OT";
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%; /* 57.6px */
+  letter-spacing: -1.92px;
+}
+
+.s-displayText p {
+  color: var(--White, #fff);
+
+  /* Desktop/Body Large */
+  font-family: "Mark OT";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 32px */
+  letter-spacing: -0.2px;
+}
+
+.s-slider {
+  width: 100%;
+  display: flex;
+  padding-bottom: 60px;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  background: #0b0518;
+}
+
+.s-sliderUp {
+  display: flex;
+  width: 100%;
+  height: 700px;
+  padding: 40px 80px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.s-sliderUp svg {
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
+}
+
+.s-sliderDiv {
+  width: 80%;
+  height: 700px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  overflow: hidden;
+}
+
+.s-sliderContainer {
+  width: 100%;
+  height: 700px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.s-sliderContainer img {
+  width: 100%;
+  height: 700px;
+  flex-shrink: 0;
+  object-fit: contain;
 }
