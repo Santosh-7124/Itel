@@ -12,7 +12,9 @@ import CameraMode from "./Overview/CameraMode";
 import Processor from "./Overview/Processor";
 import Game from "./Overview/Game";
 import Display from "./Overview/Display";
+import Battery from "./Overview/Battery";
 import Slider from "./Overview/Slider";
+import Marquee from "./Overview/Marquee";
 
 function Overview() {
   return (
@@ -30,7 +32,9 @@ function Overview() {
       <Processor />
       <Game />
       <Display />
+      <Battery />
       <Slider />
+      <Marquee />
     </div>
   );
 }

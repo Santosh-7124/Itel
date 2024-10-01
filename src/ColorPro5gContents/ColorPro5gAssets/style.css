@@ -1433,6 +1433,19 @@
   letter-spacing: -0.2px;
 }
 
+.s-battery {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #0b0518;
+}
+
+.s-battery video {
+  width: 100%;
+  object-fit: cover;
+}
+
 .s-slider {
   width: 100%;
   display: flex;
@@ -1480,4 +1493,75 @@
   height: 700px;
   flex-shrink: 0;
   object-fit: contain;
+}
+
+.s-marqueeDown {
+  width: 100%;
+  padding: 24px 0px;
+  gap: 10px;
+  background: radial-gradient(
+    406.65% 161.3% at 24.59% 50%,
+    #7a61af 0%,
+    #251b31 100%
+  );
+}
+
+.s-wrapperDown {
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.s-marqueeDownContainer {
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-flex;
+  align-items: center;
+  animation: marquee 20s linear infinite;
+  height: 45px;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+.s-marqueeDown p {
+  padding: 0px 300px;
+  color: var(--White, #fff);
+  text-align: center;
+  font-family: "Mark OT";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 32px */
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+}
+
+.s-marqueeStar {
+  width: 60px;
+  height: 45px;
+  animation: marqueeStar 2s infinite ease-in-out;
+}
+
+@keyframes marqueeStar {
+  0% {
+    transform: scale(0.8);
+  }
+  20% {
+    transform: scale(1) rotate(0deg);
+  }
+  50% {
+    transform: scale(1) rotate(360deg);
+  }
+  80% {
+    transform: scale(1) rotate(0deg);
+  }
+  100% {
+    transform: scale(0.8);
+  }
 }
