@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import RevolutionBackground from "../../ColorPro5gAssets/Revolution/Revolution.svg";
+import PhoneFrame from "../../ColorPro5gAssets/Revolution/PhoneFrame.png";
 import HighSpeed from "../../ColorPro5gAssets/Revolution/Highspeed.mov";
 import LowLag from "../../ColorPro5gAssets/Revolution/LowLag.mov";
 import BetterExperience from "../../ColorPro5gAssets/Revolution/BetterExperience.mp4";
@@ -40,7 +41,7 @@ function Revolution() {
         </p>
       </div>
       <div className="s-revolutionPhone">
-        <img alt="phone" />
+        <img src={PhoneFrame} alt="phone" />
       </div>
       <div className="s-revolutionVideo">
         {/* Render the current video */}

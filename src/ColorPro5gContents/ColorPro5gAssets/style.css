@@ -13,11 +13,12 @@
 }
 
 .s-bannerUp {
-  height: calc(100svh - 101px);
+  height: 100svh;
   width: 100%;
   position: relative;
   display: flex;
   align-items: flex-end;
+  overflow: hidden;
 }
 
 .s-bannerUp video {
@@ -160,6 +161,7 @@
   align-items: flex-start;
   gap: 60px;
   background: #181818;
+    overflow: hidden;
 }
 
 .s-features .s-heading {
@@ -468,6 +470,7 @@
   gap: 42px;
   padding: 80px 120px;
   background: #010005;
+    overflow: hidden;
 }
 
 .s-enhance .s-heading {
@@ -500,13 +503,11 @@
 
 .s-enhanceVideo {
   width: 100%;
-  height: 663.75px;
   overflow: hidden;
 }
 
 .s-enhanceVideo video {
   width: 100%;
-  height: 663.75px;
   object-fit: cover;
 }
 
@@ -586,6 +587,7 @@
   align-items: center;
   gap: 60px;
   background: #111;
+  overflow: hidden;
 }
 
 .s-colourUp {
@@ -600,7 +602,6 @@
 
 .ColourBackground {
   width: 100%;
-  height: 100%;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -736,12 +737,13 @@
 
 .s-revolution {
   width: 100%;
-  height: 100vh;
+  height: 1150px;
   display: flex;
   align-items: flex-start;
   justify-content: center;
   gap: 4px;
   position: relative;
+    overflow: hidden;
 }
 
 .s-revolutionBackground {
@@ -753,11 +755,10 @@
 
 .s-revolutionPhone {
   position: absolute;
-  height: 440.273px;
-  width: 933.714px;
+  height: 1200px;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) rotate(-90deg);
   z-index: 3;
 }
 
