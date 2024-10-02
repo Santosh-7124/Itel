@@ -1565,3 +1565,108 @@
     transform: scale(0.8);
   }
 }
+
+/* Specifications */
+.s-specifications {
+  display: flex;
+  width: 100%;
+  padding: 120px 80px 80px 80px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 40px;
+  background: #101113;
+}
+
+.s-specificationsHeading {
+  color: var(--White, #fff);
+  font-family: "Mark OT";
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+  letter-spacing: -1.92px;
+}
+
+.s-specificationsContainer {
+  display: flex;
+  width: 100%;
+  align-items: flex-start;
+  gap: 40px;
+  background: var(--Colors-Grey-Grey-5, #252525);
+}
+
+.s-specificationsOptionsContainer {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-self: stretch;
+  background: #202020;
+  transition: all 0.3s;
+}
+
+.s-specificationsOptions {
+  display: flex;
+  height: 64px;
+  padding: 12px 36px;
+  align-items: center;
+  gap: 20px;
+  align-self: stretch;
+  color: var(--Colors-Grey-Grey-3, #949494);
+  font-family: "Mark OT";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.s-activeSpecifications {
+  border-left: 6px solid var(--Itel-Red, #ff0037);
+  background: var(--Colors-Grey-Grey-5, #252525);
+  box-shadow: 24px 0px 16px -8px rgba(255, 0, 55, 0.16) inset;
+}
+
+.s-specificationsDataContainer {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-shrink: 0;
+  align-self: stretch;
+  transition: all 0.3s;
+}
+
+.s-specificationsData {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 40px;
+  transition: all 0.3s;
+}
+
+.s-parameter {
+  padding: 20px 20px 20px 0px;
+  width: 25%;
+  color: var(--Colors-Grey-Grey-3, #949494);
+  font-family: "Mark OT";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 160%; /* 22.4px */
+  letter-spacing: -0.28px;
+}
+
+.s-data {
+  padding: 20px 50px 20px 0px;
+  width: 75%;
+  color: var(--Colors-Grey-Grey-2, #d9d9d9);
+  font-family: "Mark OT";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 22.4px */
+  letter-spacing: -0.14px;
+}
