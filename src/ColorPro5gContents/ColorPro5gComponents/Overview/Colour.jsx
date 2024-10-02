@@ -7,15 +7,12 @@ import ColourPinkMobile from "../../ColorPro5gAssets/Colour/ColourPinkMobile.png
 import PinkStar from "../../ColorPro5gAssets/Colour/PinkStar.svg"; // Fixed typo for PinkStar
 
 function Colour() {
-  // State to track the active color
   const [activeColor, setActiveColor] = useState("blue");
 
-  // Handler for changing the color
   const handleColorChange = (color) => {
     setActiveColor(color);
   };
 
-  // Determine the background and star based on the active color
   const background =
     activeColor === "blue" ? ColourBackgroundBlue : ColourBackgroundPink;
   const mobileBackground =
@@ -30,6 +27,7 @@ function Colour() {
         <div className="s-MarqueeContainer">
           <div className="wrapper">
             <div className="marquee">
+              <img src={star}></img>
               <img src={star}></img>
             </div>
           </div>

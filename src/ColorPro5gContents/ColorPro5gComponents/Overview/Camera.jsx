@@ -1,12 +1,13 @@
 import React from "react";
-import EnhanceVideo from "../../ColorPro5gAssets/Enhance/EnhanceVideo.mp4";
+import CameraVideo from "../../ColorPro5gAssets/Camera/Camera.mp4";
 
 function Camera() {
   return (
     <div className="s-enhance">
       <div className="s-heading">
         <h2>
-          50MP AI-Powered Camera:<br/> Capture Brilliance
+          50MP AI-Powered Camera:
+          <br /> Capture Brilliance
         </h2>
         <p>
           Ensure every photo is a masterpiece with <br />
@@ -14,7 +15,7 @@ function Camera() {
         </p>
       </div>
       <div className="s-enhanceVideo">
-        <video src={EnhanceVideo} autoPlay loop muted></video>
+        <video src={CameraVideo} autoPlay loop muted></video>
       </div>
     </div>
   );

@@ -6,14 +6,13 @@ import FeatureSet3 from "../../ColorPro5gAssets/Features/FeatureSet3.svg";
 import FeatureSet4 from "../../ColorPro5gAssets/Features/FeatureSet4.svg";
 import FeatureVideo from "../../ColorPro5gAssets/Features/FeatureVideo1.mov";
 import FeatureSetDown from "../../ColorPro5gAssets/Features/FeatureSetDown.svg";
+import MobileFeatureSetDown from "../../ColorPro5gAssets/Features/MobileFeatureSetDown.png";
 
 function Features() {
-  // State to toggle the visibility of the additional text
   const [isExpanded, setIsExpanded] = useState(false);
 
-  // Function to expand the text
   const toggleReadMore = () => {
-    setIsExpanded(true); // Only expand, no collapsing
+    setIsExpanded(true);
   };
 
   return (
@@ -91,6 +90,12 @@ function Features() {
             <video src={FeatureVideo} autoPlay loop muted>
               Your browser does not support the video tag.
             </video>
+            <div className="s-heading">
+              <h3>
+                The Future of Dynamic <br /> Color Change is Here
+              </h3>
+              <p>Lavender Fantasy | River Blue</p>
+            </div>
           </div>
 
           <div className="s-featuresContainerTopRight">
@@ -131,9 +136,10 @@ function Features() {
           </div>
         </div>
         <div className="s-featuresContainerDown">
-          <img src={FeatureSetDown}></img>
+          <img src={FeatureSetDown} className="s-notMobile"></img>
+          <img src={MobileFeatureSetDown} className="s-mobile"></img>
           <div className="s-heading">
-            <h3>Get a Free Screen Replacement within 100 Days*</h3>
+            <h3>Get a Free Screen <br/> Replacement within 100 Days*</h3>
             <p>
               *Disclaimer: Terms & conditions apply. Offer valid for 100 days
               from the date of purchase and covers only the first screen

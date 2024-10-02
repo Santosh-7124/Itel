@@ -1,6 +1,7 @@
 import React, { useRef } from "react";
 import "../ColorPro5gContents/ColorPro5gAssets/style.css";
 import BannerVideo from "./ColorPro5gAssets/Banner/BannerVideo.mov";
+import MobileBannerVideo from "../ColorPro5gContents/ColorPro5gAssets/Banner/MobileBannerVideo.mov";
 import Button from "./ColorPro5gAssets/Features/Buttons.png";
 import Overview from "./ColorPro5gComponents/Overview";
 import Specifications from "./ColorPro5gComponents/Specifications";
@@ -20,7 +21,8 @@ function ColorPro5g() {
   return (
     <div>
       <div className="s-bannerUp">
-        <video src={BannerVideo} autoPlay loop muted></video>
+        <video src={BannerVideo} autoPlay loop muted className="s-notMobile"></video>
+        <video src={MobileBannerVideo} autoPlay loop muted className="s-mobile"></video>
         <div className="s-featurePrice">
           <a className="s-featurePriceButton">
             <img src={Button}></img>

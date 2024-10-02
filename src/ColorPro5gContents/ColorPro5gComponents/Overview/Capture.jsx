@@ -1,11 +1,13 @@
 import React from "react";
 import CaptureImg from "../../ColorPro5gAssets/Capture/CaptureImg.svg";
+import MobileCaptureImg from "../../ColorPro5gAssets/Capture/MobileCaptureImg.svg";
 
 function Capture() {
   return (
     <div className="s-capture">
       <div className="s-captureBackground">
-        <img src={CaptureImg}></img>
+        <img src={CaptureImg} className="s-notMobile"></img>
+        <img src={MobileCaptureImg} className="s-mobile"></img>
       </div>
       <div className="s-captureContainer">
         <div className="s-heading">
@@ -27,8 +29,14 @@ function Capture() {
             <p>Selfie Camera</p>
           </div>
         </div>
+        <div className="s-captureText s-mobile">
+          <p>
+            Dual Video Mode | Document | Slow Motion Mode | AR Shots | Short
+            Video | Pro | Sky Shop | Time Lapse | Panaroma |Super Night Mode
+          </p>
+        </div>
       </div>
-      <div className="s-captureText">
+      <div className="s-captureText s-notMobile">
         <p>
           Dual Video Mode | Document | Slow Motion Mode | AR Shots | Short Video
           | Pro | Sky Shop | Time Lapse | Panaroma |Super Night Mode
