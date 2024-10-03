@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import BatteryVideo from "../../ColorPro5gAssets/Battery/BatteryVideo.webm";
+import BatteryVideo from "../../ColorPro5gAssets/Battery/BatteryVideo.mp4";
 import MobileBatteryVideo from "../../ColorPro5gAssets/Battery/MobileBatteryVideo.mov";
 
 function Battery() {

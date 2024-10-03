@@ -2677,7 +2677,7 @@
     justify-content: center;
     background: var(--Dark-Card-BG, #232323);
     overflow: hidden; /* Hide the scrollbar */
-    padding: 40px 0px;
+    padding: 40px 16px;
   }
 
   .s-mobileSlideContainer {
