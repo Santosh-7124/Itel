@@ -1,14 +1,13 @@
 import React, { useState, useRef, useEffect } from "react";
-import RiverBlue01 from "../../ColorPro5gAssets/Slider/River Blue 01.png";
-import RiverBlue02 from "../../ColorPro5gAssets/Slider/River Blue 02.png";
-import RiverBlue03 from "../../ColorPro5gAssets/Slider/River Blue 03.png";
-import RiverBlue04 from "../../ColorPro5gAssets/Slider/River Blue 04.png";
-import LavenderFantasy01 from "../../ColorPro5gAssets/Slider/Lavender Fantasy 01.png";
+import RiverBlue01 from "../../ColorPro5gAssets/Slider/River Blue 01.webp";
+import RiverBlue02 from "../../ColorPro5gAssets/Slider/River Blue 02.webp";
+import RiverBlue03 from "../../ColorPro5gAssets/Slider/River Blue 03.webp";
+import RiverBlue04 from "../../ColorPro5gAssets/Slider/River Blue 04.webp";
+import LavenderFantasy01 from "../../ColorPro5gAssets/Slider/Lavender Fantasy 01.webp";
 import LavenderFantasy02 from "../../ColorPro5gAssets/Slider/Lavender Fantasy 02.png";
-import LavenderFantasy03 from "../../ColorPro5gAssets/Slider/Lavender Fantasy 03.png";
-import LavenderFantasy04 from "../../ColorPro5gAssets/Slider/Lavender Fantasy 04.png";
+import LavenderFantasy03 from "../../ColorPro5gAssets/Slider/Lavender Fantasy 03.webp";
+import LavenderFantasy04 from "../../ColorPro5gAssets/Slider/Lavender Fantasy 04.webp";
 
-// Image mapping for each color option
 const imageMapping = {
   "River Blue": [
     { src: RiverBlue01, alt: "River Blue 01" },

@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import ProcessorVideo from "../../ColorPro5gAssets/Processor/ProcessorVideo.webm";
-import MobileProcessorVideo from "../../ColorPro5gAssets/Processor/MobileProcessorVideo.mov";
+import MobileProcessorVideo from "../../ColorPro5gAssets/Processor/MobileProcessorVideo.webm";
 import Mediatek from "../../ColorPro5gAssets/Processor/Mediatek.svg";
 
 function Processor() {

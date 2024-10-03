@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import RamRomBackground from "../../ColorPro5gAssets/RamRom/RamRomBackground.svg";
 import Ramvideo from "../../ColorPro5gAssets/RamRom/RamVideo.mov";
-import MobileRamvideo from "../../ColorPro5gAssets/RamRom/MobileRamvideo.mp4";
+import MobileRamvideo from "../../ColorPro5gAssets/RamRom/MobileRamvideo.webm";
 
 function RamRom() {
   const [hasPlayed, setHasPlayed] = useState(false);

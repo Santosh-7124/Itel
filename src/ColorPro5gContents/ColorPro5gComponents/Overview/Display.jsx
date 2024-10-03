@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import DisplayBackground from "../../ColorPro5gAssets/Display/DisplayBackground.mov";
+import DisplayBackground from "../../ColorPro5gAssets/Display/DisplayBackground.webm";
 import MobileDisplayBackground from "../../ColorPro5gAssets/Display/MobileDisplayBackground.mov";
 
 function Display() {
