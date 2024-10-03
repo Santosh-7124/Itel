@@ -1,5 +1,5 @@
 import React from "react";
-import CameraVideo from "../../ColorPro5gAssets/Camera/Camera.mp4";
+import CameraVideo from "../../ColorPro5gAssets/Camera/Camera.webm";
 
 function Camera() {
   return (

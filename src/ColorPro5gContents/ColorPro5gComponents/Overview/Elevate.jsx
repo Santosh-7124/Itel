@@ -1,5 +1,5 @@
 import React from "react";
-import ElevateVideo from "../../ColorPro5gAssets/Elevate/ElevateVideo.mp4";
+import ElevateVideo from "../../ColorPro5gAssets/Elevate/ElevateVideo.webm";
 
 function Elevate() {
   return (

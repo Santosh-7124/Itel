@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import "../ColorPro5gContents/ColorPro5gAssets/style.css";
-import BannerVideo from "./ColorPro5gAssets/Banner/BannerVideo.mov";
+import BannerVideo from "./ColorPro5gAssets/Banner/BannerVideo.webm";
 import MobileBannerVideo from "../ColorPro5gContents/ColorPro5gAssets/Banner/MobileBannerVideo.mov";
 import Button from "./ColorPro5gAssets/Features/Buttons.png";
 import Overview from "./ColorPro5gComponents/Overview";

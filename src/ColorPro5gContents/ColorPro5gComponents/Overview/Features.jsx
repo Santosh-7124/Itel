@@ -4,7 +4,7 @@ import FeatureSet1 from "../../ColorPro5gAssets/Features/FeatureSet1.svg";
 import FeatureSet2 from "../../ColorPro5gAssets/Features/FeatureSet2.svg";
 import FeatureSet3 from "../../ColorPro5gAssets/Features/FeatureSet3.svg";
 import FeatureSet4 from "../../ColorPro5gAssets/Features/FeatureSet4.svg";
-import FeatureVideo from "../../ColorPro5gAssets/Features/FeatureVideo1.mov";
+import FeatureVideo from "../../ColorPro5gAssets/Features/FeatureVideo1.mp4";
 import FeatureSetDown from "../../ColorPro5gAssets/Features/FeatureSetDown.svg";
 import MobileFeatureSetDown from "../../ColorPro5gAssets/Features/MobileFeatureSetDown.png";
 

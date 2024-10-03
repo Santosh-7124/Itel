@@ -1,5 +1,5 @@
 import React from "react";
-import CameraModeVideo from "../../ColorPro5gAssets/CameraMode/CameraModeVideo.mov";
+import CameraModeVideo from "../../ColorPro5gAssets/CameraMode/CameraModeVideo.webm";
 
 function CameraMode() {
   return (

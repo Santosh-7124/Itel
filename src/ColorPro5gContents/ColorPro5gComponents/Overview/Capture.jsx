@@ -1,5 +1,5 @@
 import React from "react";
-import CaptureImg from "../../ColorPro5gAssets/Capture/CaptureImg.svg";
+import CaptureImg from "../../ColorPro5gAssets/Capture/CaptureImg.png";
 import MobileCaptureImg from "../../ColorPro5gAssets/Capture/MobileCaptureImg.svg";
 
 function Capture() {
