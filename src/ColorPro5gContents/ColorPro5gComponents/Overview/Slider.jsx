@@ -55,7 +55,7 @@ function Slider() {
   };
 
   return (
-    <div className="s-slider">
+    <div className="s-slider s-notMobile">
       <div className="s-sliderUp">
         <svg
           onClick={handleRightClick}
@@ -146,6 +146,8 @@ function Slider() {
           </div>
         </div>
       </div>
+
+ 
     </div>
   );
 }

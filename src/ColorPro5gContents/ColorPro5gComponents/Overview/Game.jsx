@@ -1,10 +1,12 @@
 import React from "react";
 import GameBackground from "../../ColorPro5gAssets/Game/GameBackground.png";
+import MobileGameBackground from "../../ColorPro5gAssets/Game/MobileGameBackground.png";
 
 function Game() {
   return (
     <div className="s-game">
-      <img src={GameBackground} className="GameBackground"></img>
+      <img src={GameBackground} className="GameBackground s-notMobile"></img>
+      <img src={MobileGameBackground} className="GameBackground s-mobile"></img>
       <div className="s-gameContent">
         <div className="s-gameContentUp">
           <div className="s-heading">

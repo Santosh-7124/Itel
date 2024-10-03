@@ -6,25 +6,40 @@ function Marquee() {
     <div className="s-marqueeDown">
       <div className="s-wrapperDown">
         <div className="s-marqueeDownContainer">
-          <p>Get 1 Year of Warranty by Authorized service Centers</p>
+          <p>
+            Get 1 Year of Warranty by <br className="s-mobile" /> Authorized
+            service Centers
+          </p>
           <img src={MarqueeStar} className="s-marqueeStar"></img>
-          <p>Get 1 Year of Warranty by Authorized service Centers</p>
+          <p>
+            Get 1 Year of Warranty by <br className="s-mobile" /> Authorized
+            service Centers
+          </p>
           <img src={MarqueeStar} className="s-marqueeStar"></img>
-          <p>Get 1 Year of Warranty by Authorized service Centers</p>
+          <p>
+            Get 1 Year of Warranty by <br className="s-mobile" /> Authorized
+            service Centers
+          </p>
           <img src={MarqueeStar} className="s-marqueeStar"></img>
-          <p>Get 1 Year of Warranty by Authorized service Centers</p>
+          <p>
+            Get 1 Year of Warranty by <br className="s-mobile" /> Authorized
+            service Centers
+          </p>
           <img src={MarqueeStar} className="s-marqueeStar"></img>
-          <p>Get 1 Year of Warranty by Authorized service Centers</p>
+          <p>
+            Get 1 Year of Warranty by <br className="s-mobile" /> Authorized
+            service Centers
+          </p>
           <img src={MarqueeStar} className="s-marqueeStar"></img>
-          <p>Get 1 Year of Warranty by Authorized service Centers</p>
+          <p>
+            Get 1 Year of Warranty by <br className="s-mobile" /> Authorized
+            service Centers
+          </p>
           <img src={MarqueeStar} className="s-marqueeStar"></img>
-          <p>Get 1 Year of Warranty by Authorized service Centers</p>
-          <img src={MarqueeStar} className="s-marqueeStar"></img>
-          <p>Get 1 Year of Warranty by Authorized service Centers</p>
-          <img src={MarqueeStar} className="s-marqueeStar"></img>
-          <p>Get 1 Year of Warranty by Authorized service Centers</p>
-          <img src={MarqueeStar} className="s-marqueeStar"></img>
-          <p>Get 1 Year of Warranty by Authorized service Centers</p>
+          <p>
+            Get 1 Year of Warranty by <br className="s-mobile" /> Authorized
+            service Centers
+          </p>
           <img src={MarqueeStar} className="s-marqueeStar"></img>
         </div>
       </div>

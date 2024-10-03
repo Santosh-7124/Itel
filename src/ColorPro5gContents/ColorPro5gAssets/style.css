@@ -1491,6 +1491,10 @@
   background: #0b0518;
 }
 
+.s-mobileSlide {
+  display: none;
+}
+
 .s-sliderUp {
   display: flex;
   width: 100%;
@@ -2416,8 +2420,402 @@
     letter-spacing: -0.24px;
   }
 
-  .s-cameraMode{
+  .s-cameraMode {
     width: 100%;
     padding: 24px 16px;
+  }
+
+  .s-processor .s-heading {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .s-processor .s-heading .s-text {
+    align-items: center;
+  }
+
+  .s-processor .s-heading .s-text img {
+    width: 76.418px;
+  }
+
+  .s-processor .s-heading .s-text h3 {
+    color: var(--White, #fff);
+    font-family: "Mark OT";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%; /* 19.2px */
+    letter-spacing: -0.16px;
+  }
+
+  .s-processor .s-heading .s-content {
+    gap: 8px;
+  }
+
+  .s-processor .s-heading .s-content h2 {
+    color: var(--White, #fff);
+    text-align: center;
+
+    /* Mobile/M - H4 */
+    font-family: "Mark OT";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130%; /* 31.2px */
+    letter-spacing: -0.24px;
+  }
+
+  .s-processor .s-heading .s-content p {
+    color: var(--White, #fff);
+    text-align: center;
+    font-family: "Mark OT";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: -0.24px;
+  }
+
+  .s-gameContent {
+    width: 100%;
+    padding: 70px 16px 0px 16px;
+    gap: 36px;
+  }
+
+  .s-gameContentUp {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 24px;
+    align-self: stretch;
+  }
+
+  .s-gameContentUp .s-heading {
+    gap: 8px;
+  }
+
+  .s-gameContentUp .s-heading h2 {
+    color: var(--White, #fff);
+
+    /* Mobile/M - H4 */
+    font-family: "Mark OT";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130%; /* 31.2px */
+    letter-spacing: -0.24px;
+  }
+
+  .s-gameContentUp .s-heading p {
+    color: var(--Colors-Grey-Grey-2, #d9d9d9);
+
+    /* M - Body 2 (12R) */
+    font-family: "Mark OT";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 18px */
+    letter-spacing: -0.24px;
+  }
+
+  .s-gameContent .s-content {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    align-self: stretch;
+  }
+
+  .s-gameContent .s-content .s-gameSet svg {
+    width: 32px;
+    height: 32px;
+  }
+
+  .s-gameContent .s-content .s-gameSet p {
+    color: #fff;
+
+    /* Desktop/Caption */
+    font-family: "Mark OT";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%; /* 19.2px */
+    letter-spacing: 0.24px;
+  }
+
+  .s-gameContent .s-content .s-gameSet p span {
+    color: #fff;
+
+    /* Mobile/M - H5 */
+    font-family: "Mark OT";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 130%;
+    letter-spacing: 0.2px;
+  }
+
+  .s-gameContentDown h1 {
+    color: #fff;
+
+    /* Mobile/M - H1 */
+    font-family: "Mark OT";
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%; /* 43.2px */
+    letter-spacing: -0.72px;
+  }
+
+  .s-gameContentDown p {
+    color: var(--Colors-Grey-Grey-2, #d9d9d9);
+
+    /* Desktop/Body 2 Regular */
+    font-family: "Mark OT";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%; /* 22.4px */
+    letter-spacing: -0.14px;
+  }
+
+  .DisplayBackground {
+    padding: 0;
+    border-radius: 0;
+  }
+
+  .s-displayText {
+    width: 100%;
+    left: 0;
+    top: 0;
+    transform: none;
+    padding: 40px 16px 0px 16px;
+    gap: 8px;
+  }
+  .s-displayText h2 {
+    color: var(--White, #fff);
+
+    /* Mobile/M - H4 */
+    font-family: "Mark OT";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130%; /* 31.2px */
+    letter-spacing: -0.24px;
+  }
+
+  .s-displayText p {
+    color: var(--Colors-Grey-Grey-2, #d9d9d9);
+
+    /* M - Body 2 (12R) */
+    font-family: "Mark OT";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 18px */
+    letter-spacing: -0.24px;
+  }
+
+  .s-battery {
+    position: relative;
+  }
+
+  .s-battery .s-captureContainer {
+    width: 70%;
+    top: 60px;
+    opacity: 0;
+    transition: all 0.3s;
+  }
+
+  .s-battery .s-activeBatterText {
+    opacity: 1;
+  }
+
+  .s-battery .s-captureContainer .s-heading h2 {
+    color: var(--White, #fff);
+
+    /* Mobile/M - H3 */
+    font-family: "Mark OT";
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%; /* 33.6px */
+    letter-spacing: -0.28px;
+  }
+
+  .s-battery .s-captureSet h3 {
+    color: var(--White, #fff);
+
+    /* Mobile/M - H5 Medium */
+    font-family: "Mark OT";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130%; /* 26px */
+  }
+
+  .s-battery .s-captureSet p {
+    color: #fff;
+
+    /* M Body Large (14M) */
+    font-family: "Mark OT";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%; /* 19.6px */
+    letter-spacing: 0.14px;
+  }
+
+  .s-mobileSlide {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: var(--Dark-Card-BG, #232323);
+    overflow: hidden; /* Hide the scrollbar */
+    padding: 40px 0px;
+  }
+
+  .s-mobileSlideContainer {
+    width: 100%;
+    height: 432px;
+    display: flex;
+    scroll-snap-type: x mandatory; /* Enable scroll snapping on the x-axis */
+    overflow-x: auto; /* Allow horizontal scrolling */
+    scroll-behavior: smooth; /* Smooth scrolling */
+    -webkit-overflow-scrolling: touch; /* Enable smooth scrolling on mobile */
+  }
+
+  .s-mobileSlideContainer img {
+    width: 100%;
+    height: 432px;
+    object-fit: contain;
+    flex-shrink: 0; /* Prevent shrinking of images */
+    scroll-snap-align: start; /* Ensure the image snaps to the start of the container */
+  }
+
+  .s-mobileSlideContainer::-webkit-scrollbar {
+    display: none; /* Hide the scrollbar */
+  }
+
+  .s-mobileIndicatorContainer {
+    padding: 16px 0px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+  }
+
+  .s-mobileIndicator {
+    width: 20px;
+    height: 4px;
+    background-color: #ceccd5;
+    border-radius: 2px;
+    transition: all 0.3s;
+  }
+
+  .s-mobileActiveIndicator {
+    width: 80px;
+    background-color: #ff0037;
+  }
+
+  .s-marqueeDown {
+    padding: 16px 0px;
+  }
+
+  .s-marqueeDown p {
+    padding: 0px 40px;
+    color: var(--White, #fff);
+    font-family: "Mark OT";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 160%; /* 22.4px */
+    letter-spacing: -0.28px;
+    text-transform: uppercase;
+  }
+
+  /* Specifications */
+
+  .s-specifications {
+    padding: 40px 16px;
+    gap: 24px;
+  }
+
+  .s-specificationsHeading {
+    color: var(--White, #fff);
+    font-family: "Mark OT";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130%; /* 31.2px */
+    letter-spacing: -0.48px;
+  }
+
+  .s-specificationsContainer {
+    gap: 0;
+  }
+
+  .s-specificationsOptionsContainer {
+    width: 40%;
+  }
+
+  .s-specificationsOptions {
+    padding: 12px;
+    min-height: 64px;
+    height: auto;
+  }
+
+  .s-specificationsDataContainer {
+    display: flex;
+    padding: 0px 12px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+    flex: 1 0 0;
+    align-self: stretch;
+  }
+  .s-specificationsData {
+    display: flex;
+    padding: 4px 0px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+    align-self: stretch;
+    border-bottom: 1px solid rgba(206, 204, 213, 0.1); /* Adjust the last value (0.5) for opacity */
+  }
+
+  .s-parameter {
+    width: 100%;
+    padding: 0;
+    height: auto;
+    color: var(--Colors-Grey-Grey-2, #d9d9d9);
+
+    /* Desktop/Caption */
+    font-family: "Mark OT";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%; /* 19.2px */
+    letter-spacing: 0.24px;
+  }
+
+  .s-data {
+    width: 100%;
+    padding: 0;
+    height: auto;
+    color: var(--Colors-Grey-Grey-3, #949494);
+
+    /* Desktop/Overline */
+    font-family: "Mark OT";
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%; /* 16px */
+    letter-spacing: 0.2px;
   }
 }

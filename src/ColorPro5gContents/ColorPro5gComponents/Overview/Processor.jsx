@@ -1,11 +1,15 @@
 import React, { useEffect, useRef, useState } from "react";
 import ProcessorVideo from "../../ColorPro5gAssets/Processor/ProcessorVideo.mov";
+import MobileProcessorVideo from "../../ColorPro5gAssets/Processor/MobileProcessorVideo.mov";
 import Mediatek from "../../ColorPro5gAssets/Processor/Mediatek.svg";
 
 function Processor() {
   const [isInView, setIsInView] = useState(false);
   const [isActive, setIsActive] = useState(false);
-  const videoRef = useRef(null);
+
+  // Separate refs for desktop and mobile videos
+  const desktopVideoRef = useRef(null);
+  const mobileVideoRef = useRef(null);
   const sectionRef = useRef(null);
 
   useEffect(() => {
@@ -18,7 +22,7 @@ function Processor() {
         }
       },
       {
-        threshold: 0.3, // Trigger when 50% of the element is in view
+        threshold: 0.3, // Trigger when 30% of the element is in view
       }
     );
 
@@ -35,8 +39,14 @@ function Processor() {
 
   useEffect(() => {
     if (isInView) {
-      if (videoRef.current) {
-        videoRef.current.play(); // Play the video when it's in view
+      // Play the desktop video if available
+      if (desktopVideoRef.current) {
+        desktopVideoRef.current.play();
+      }
+
+      // Play the mobile video if available
+      if (mobileVideoRef.current) {
+        mobileVideoRef.current.play();
       }
 
       // Add a delay of 1 second to activate the class
@@ -51,7 +61,18 @@ function Processor() {
       className={`s-processor ${isActive ? "s-activeProcessor" : ""}`}
       ref={sectionRef}
     >
-      <video ref={videoRef} src={ProcessorVideo} muted></video>
+      <video
+        ref={desktopVideoRef}
+        src={ProcessorVideo}
+        className="s-notMobile"
+        muted
+      ></video>
+      <video
+        ref={mobileVideoRef}
+        src={MobileProcessorVideo}
+        className="s-mobile"
+        muted
+      ></video>
       <div className="s-heading">
         <div className="s-text">
           <img src={Mediatek} alt="Mediatek" />

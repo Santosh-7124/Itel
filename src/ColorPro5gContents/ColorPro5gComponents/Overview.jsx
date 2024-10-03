@@ -14,6 +14,7 @@ import Game from "./Overview/Game";
 import Display from "./Overview/Display";
 import Battery from "./Overview/Battery";
 import Slider from "./Overview/Slider";
+import MobileSlide from "./Overview/MobileSlide";
 import Marquee from "./Overview/Marquee";
 
 function Overview() {
@@ -34,6 +35,7 @@ function Overview() {
       <Display />
       <Battery />
       <Slider />
+      <MobileSlide />
       <Marquee />
     </div>
   );

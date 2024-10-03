@@ -2,12 +2,15 @@ import React, { useEffect, useRef, useState } from "react";
 import RamRomBackground from "../../ColorPro5gAssets/RamRom/RamRomBackground.svg";
 import Ramvideo from "../../ColorPro5gAssets/RamRom/RamVideo.mov";
 import MobileRamvideo from "../../ColorPro5gAssets/RamRom/MobileRamvideo.mp4";
+
 function RamRom() {
   const [hasPlayed, setHasPlayed] = useState(false);
   const [isUpActive, setIsUpActive] = useState(false);
   const [isDownActive, setIsDownActive] = useState(false);
 
-  const videoRef = useRef(null);
+  // Separate refs for desktop and mobile videos
+  const desktopVideoRef = useRef(null);
+  const mobileVideoRef = useRef(null);
   const sectionRef = useRef(null);
 
   useEffect(() => {
@@ -21,7 +24,7 @@ function RamRom() {
         }
       },
       {
-        threshold: 0.2,
+        threshold: 0.3, // Trigger when 20% of the section is visible
       }
     );
 
@@ -38,8 +41,17 @@ function RamRom() {
 
   useEffect(() => {
     if (hasPlayed) {
-      videoRef.current.play();
+      // Play desktop video if available
+      if (desktopVideoRef.current) {
+        desktopVideoRef.current.play();
+      }
 
+      // Play mobile video if available
+      if (mobileVideoRef.current) {
+        mobileVideoRef.current.play();
+      }
+
+      // Add a delay to activate the upper and lower sections
       setTimeout(() => {
         setIsUpActive(true);
       }, 500);
@@ -74,13 +86,13 @@ function RamRom() {
         </div>
       </div>
       <video
-        ref={videoRef}
+        ref={desktopVideoRef}
         src={Ramvideo}
         muted
         className="RamRomBackground s-notMobile"
       ></video>
       <video
-        ref={videoRef}
+        ref={mobileVideoRef}
         src={MobileRamvideo}
         muted
         className="RamRomBackground s-mobile"
